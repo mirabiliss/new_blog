@@ -8,4 +8,4 @@
 - [ ] tags - 2
 - [ ] pagination - 2
 - [ ] search - 2
-- [ ] loading images - 2
+- [x] loading images - 2
