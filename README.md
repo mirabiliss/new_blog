@@ -1,24 +1,11 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Blog in Ruby on Rails
+    
+- [x] getting started - 5
+- [ ] authentication - 2 
+- [ ] authorisation - 3
+- [ ] admin mode - 1
+- [ ] filters (categories) - 2
+- [ ] tags - 2
+- [ ] pagination - 2
+- [ ] search - 2
+- [ ] loading images - 2
