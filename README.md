@@ -5,7 +5,7 @@
 - [ ] authorisation - 3
 - [ ] admin mode - 1
 - [ ] filters (categories) - 2
-- [ ] tags - 2
+- [x] tags - 2
 - [ ] pagination - 2
 - [ ] search - 2
 - [x] loading images - 2
