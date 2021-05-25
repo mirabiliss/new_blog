@@ -3,3 +3,7 @@
 Blog includes <%= Article.public_count %> public posts <br/><br/>
 
 <%= render @articles %>
+
+<ul class="pagination">
+  <%= will_paginate @articles %>
+</ul>
