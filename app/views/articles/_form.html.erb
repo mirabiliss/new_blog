@@ -1,4 +1,4 @@
-<%= form_with model: article do |form| %>
+<%= form_with model: article, html: { multipart: true } do |form| %>
   <div class="form-group">
     <%= form.label :title %><br>
     <%= form.text_field :title, class: 'form-control' %>
@@ -18,6 +18,11 @@
   <div class="form-group">
     <%= form.label :status %><br>
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public', class: 'form-control status' %>
+  </div>
+
+   <div class="form-group">
+    <%= form.label :image %><br>
+    <%= form.file_field :image, class: '' %>
   </div>
 
   <div class="form-group">
