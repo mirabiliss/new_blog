@@ -1,16 +1,22 @@
-<h1><%= @article.title %></h1>
+<article class="post">
+  <section class="post-head">
+    <h2><%= @article.title %></h2>
+    <small>
+      <time><%= @article.created_at.strftime("%d, %B, %Y") %></time>
+      |
+      <%= link_to 'Edit', edit_article_path(@article) %>
+      |
+      <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </small>
+  </section>
+  <section class="post-body">
+    <%= @article.body %>
+  </section>
+</article>
 
-<p><%= @article.body %></p>
 
-<ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Remove", article_path(@article),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
-</ul>
-
-<h2>Comments</h2>
+<h4>Comments</h4>
 <%= render @article.comments %>
 
-<h2>Add a comment:</h2>
+<h5>Add a comment:</h5>
 <%= render 'comments/form' %>

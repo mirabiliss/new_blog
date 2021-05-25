@@ -1,4 +1,5 @@
 class Article < ApplicationRecord
+  scope :ordered_by_id, -> { order(id: :desc) }
   include Visible
 
   has_many :comments, dependent: :destroy

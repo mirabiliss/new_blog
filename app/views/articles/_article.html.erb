@@ -1,4 +1,15 @@
-<h2><%= link_to article.title, article %></h2>
-<div><%= article.body %></div>
-<div class="timestamps" style="color:#696969; font-size:12px;"><%= article.created_at.strftime("%d, %B, %Y") %></div>
-<hr/>
+<article class="post">
+  <section class="post-head">
+    <h2><%= link_to article.title, article %></h2>
+    <small>
+      <time><%= article.created_at.strftime("%d, %B, %Y") %></time>
+      |
+      <%= link_to 'Edit', edit_article_path(article) %>
+      |
+      <%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </small>
+  </section>
+  <section class="post-category">
+    <%= article.body %>
+  </section>
+</article>
